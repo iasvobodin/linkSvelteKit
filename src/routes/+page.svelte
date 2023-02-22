@@ -1,33 +1,26 @@
 <svelte:head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Anastasia Svobodina" />
-    <meta name="description" content="Links for contact" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="SvobodinaPhoto" />
-    <meta property="og:type" content="website">
-    <meta name="facebook-domain-verification" content="iu0tfv17lm8mf84159lo9wmqh8p9h8" />
-    <meta property="og:image" content="/img/ava.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:url" content="https://link.svobodinaphoto.ru/" />
-    <meta property="og:locale" content="ru_RU" />
-    <meta property="og:description" content="The best photographer ever" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="link.svobodinaphoto.ru">
-    <meta property="twitter:url" content="https://link.svobodinaphoto.ru/">
-    <meta name="twitter:title" content="SvobodinaPhoto">
-    <meta name="twitter:description" content="The best photographer ever">
-    <meta name="twitter:image" content="https://link.svobodinaphoto.ru/img/ava.jpg">
-    <link rel="canonical" href="https://link.svobodinaphoto.ru/" />
-    <link rel="icon" href="./favicon.svg">
-    <link rel="mask-icon" href="./favicon.svg" color=”# 000000">
-    <link rel="stylesheet" href="./style.css">
-    <title>SvobodinaPhoto</title>
-   
+	<meta name="author" content="Anastasia Svobodina" />
+	<meta name="description" content="Links for contact" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="SvobodinaPhoto" />
+	<meta property="og:type" content="website" />
+	<meta name="facebook-domain-verification" content="iu0tfv17lm8mf84159lo9wmqh8p9h8" />
+	<meta property="og:image" content="/img/ava.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="300" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:url" content="https://link.svobodinaphoto.ru/" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:description" content="The best photographer ever" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="link.svobodinaphoto.ru" />
+	<meta property="twitter:url" content="https://link.svobodinaphoto.ru/" />
+	<meta name="twitter:title" content="SvobodinaPhoto" />
+	<meta name="twitter:description" content="The best photographer ever" />
+	<meta name="twitter:image" content="https://link.svobodinaphoto.ru/img/ava.jpg" />
+	<link rel="canonical" href="https://link.svobodinaphoto.ru/" />
+	<title>SvobodinaPhoto</title>
 </svelte:head>
-
-
 
 <main class="link">
 	<h1>SvobodinaPhoto</h1>
