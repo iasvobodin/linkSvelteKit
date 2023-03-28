@@ -61,7 +61,7 @@
         border-radius: 5px;
     }
 
-    
+
 
     h1,
     h2,
@@ -83,6 +83,7 @@
     h3 {
         font-size: calc(20px + 1vw);
         line-height: 1;
+        text-align: center;
     }
 
     h4 {

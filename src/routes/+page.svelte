@@ -32,6 +32,7 @@
 		</div>
 		<img width="50px" height="38px" class="logo" src="./img/logo.svg" alt="Я просто барашек" />
 	</div>
+	<a class="contact__link" href="https://svobodinaphoto.store">Сайт</a>
 	<a class="contact__link" href="https://vk.com/svobodinaphoto">Группа vk</a>
 	<a class="contact__link" href="https://www.instagram.com/svobodinaphoto/">Instagram</a>
 	<a class="contact__link" href="https://vk.me/aasvobodina">Написать в Vk</a>
@@ -39,8 +40,8 @@
 	<a class="contact__link" href="https://wa.me/%2B79514616243">Написать в WhatsApp</a>
 	<a class="contact__link" href="viber://chat?number=79514616243">Написать в Viber</a>
 	<a class="contact__link" href="tel:+79514616243">Позвонить</a>
-	<a class="contact__link" href="./reviews">Отзывы</a>
-	<a class="contact__link" href="./price">Цены</a>
+	<!-- <a class="contact__link" href="./reviews">Отзывы</a> -->
+	<!-- <a class="contact__link" href="./price">Цены</a> -->
 </main>
 
 <style>
