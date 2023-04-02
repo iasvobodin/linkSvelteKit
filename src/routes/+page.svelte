@@ -32,9 +32,9 @@
 		</div>
 		<img width="50px" height="38px" class="logo" src="./img/logo.svg" alt="Я просто барашек" />
 	</div>
-	<a class="contact__link" href="https://svobodinaphoto.store">Сайт</a>
-	<a class="contact__link" href="https://vk.com/svobodinaphoto">Группа vk</a>
+	<a class="contact__link" href="https://svobodinaphoto.ru">Сайт</a>
 	<a class="contact__link" href="https://www.instagram.com/svobodinaphoto/">Instagram</a>
+	<a class="contact__link" href="https://vk.com/svobodinaphoto">Группа vk</a>
 	<a class="contact__link" href="https://vk.me/aasvobodina">Написать в Vk</a>
 	<a class="contact__link" href="https://t.me/svobodinaphoto">Написать в Telegram</a>
 	<a class="contact__link" href="https://wa.me/%2B79514616243">Написать в WhatsApp</a>
@@ -68,12 +68,12 @@
 		content: '';
 		z-index: -1;
 		border-radius: 5px;
-		background: linear-gradient(7deg, #ba682d, #840000 41.07%, #003c96 76.05%);
+		background: linear-gradient(120deg, #57ebdb, #403ddb 41.07%, #070047 76.05%);
 		position: absolute;
-		top: -2px;
-		left: -2px;
-		width: calc(100% + 4px);
-		height: calc(100% + 4px);
+		top: -1.5px;
+		left: -1.5px;
+		width: calc(100% + 3px);
+		height: calc(100% + 3px);
 	}
 
 	.link {
@@ -117,7 +117,7 @@
 		content: '';
 		z-index: -1;
 		border-radius: 50%;
-		background: linear-gradient(7deg, #ba682d, #840000 41.07%, #003c96 76.05%);
+		background: linear-gradient(120deg, #57ebdb, #403ddb 41.07%, #070047 76.05%);
 		position: absolute;
 		top: -3px;
 		left: -3px;
