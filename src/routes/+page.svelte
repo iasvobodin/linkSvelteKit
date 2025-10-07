@@ -55,14 +55,19 @@
 	/>
 	<meta name="twitter:image" content="https://link.svobodinaphoto.ru/img/ava.jpg" />
 	<link rel="canonical" href="https://link.svobodinaphoto.ru/" />
-	<link rel="preload" href="/img/ava.jpg" as="image" />
+	<link rel="preload" href="/img/ava2.jpg" as="image" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap"
+		rel="stylesheet"
+	/>
+
 	<title>Anastasia Svobodina – Профессиональный фотограф | Контакты</title>
 	{@html `<script type="application/ld+json">${JSON.stringify(structuredData)}<\/script>`}
 </svelte:head>
 
 <main class="link">
 	<h1>Anastasia Svobodina</h1>
-	<span class="sr-only">Профессиональный фотograф. Контакты для связи</span>
+	<!-- <span class="sr-only">Профессиональный фотograф. Контакты для связи</span> -->
 
 	<div class="hedlain">
 		<div class="holder">
@@ -70,7 +75,7 @@
 				<img
 					width="200"
 					height="133"
-					src="/img/ava.jpg"
+					src="/img/ava2.jpg"
 					alt="Фотограф Анастасия Свободина"
 					loading="eager"
 				/>

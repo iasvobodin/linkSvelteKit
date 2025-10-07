@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+        url('./fonts/roboto-slab-v12-latin_cyrillic-200.woff2') format('woff2'),
+        url('./fonts/roboto-slab-v12-latin_cyrillic-200.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 400;
+    /* Этот шрифт не используется для отображаемых элементов, но его `font-family` есть в стилях `h1, h2, h3, h4, h5, h6`. */
+    /* В данной HTML-структуре есть только h1, но для него, в секции .link h1, семейство шрифтов не переопределяется. */
+    /* Оставляем на случай, если h1, h2, ... будут добавлены в другие места. */
+    font-weight: 300; /* Переопределено для заголовков, но здесь оставляем оригинал */
+    src: local(''),
+        url('./fonts/cormorant-infant-v11-latin_cyrillic-regular.woff2') format('woff2'),
+        url('./fonts/cormorant-infant-v11-latin_cyrillic-regular.woff') format('woff');
+}
+
+/* --- */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* Фоновый градиент и цвет */
+    background-image: repeating-linear-gradient(22.5deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 20px, transparent 20px, transparent 21px), repeating-linear-gradient(112.5deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 20px, transparent 20px, transparent 21px), linear-gradient(90deg, #57ebdb, #309f94, #403ddb, #2422a2, #080050);
+    background-color: black;
+    
+    /* Шрифты, размер, цвет текста */
+    font-family: Comfortaa, Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+    
+    /* Отступы и высота */
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+/* --- */
+
+/* Стили для заголовков (h1 используется) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Cormorant Infant;
+    margin: 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: max(36px, 3.8vw);
+    line-height: 1;
+    color: white;
+    justify-self: center;
+    margin: 1vh;
+}
+
+/* --- */
+
+/* ===== Link Page Styles (Используются в <main class="link">) ===== */
+
+/* Стили для скринридеров (используется для <span> с классом sr-only) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Стили для контейнера, в котором находятся аватар и логотип */
+.hedlain {
+    position: relative;
+    display: grid;
+}
+
+/* Стили для ссылок-кнопок (используется для <a> с классом contact__link) */
+.contact__link {
+    position: relative;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-color: white;
+    color: white;
+    padding: 1vh;
+    justify-self: center;
+    font-size: max(1.2vw, 20px);
+    border-radius: 5px;
+    background-color: black;
+    width: max(300px, 30vw);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Градиентная обводка для ссылок-кнопок */
+.contact__link::before {
+    content: '';
+    z-index: -1;
+    border-radius: 5px;
+    background: linear-gradient(120deg, #57ebdb, #403ddb 41.07%, #070047 76.05%);
+    position: absolute;
+    top: -1.5px;
+    left: -1.5px;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+}
+
+/* Эффекты при наведении и фокусе */
+.contact__link:hover,
+.contact__link:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(87, 235, 219, 0.3);
+    outline: none;
+}
+
+/* Стиль для доступности (визуальный фокус) */
+.contact__link:focus-visible {
+    outline: 2px solid #57ebdb;
+    outline-offset: 2px;
+}
+
+/* Стиль при нажатии */
+.contact__link:active {
+    transform: translateY(0);
+}
+
+/* Основной контейнер страницы (используется для <main class="link">) */
+.link {
+    font-family: Roboto Slab, Georgia, serif;
+    display: grid;
+    row-gap: 5px;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    /* Обратите внимание: тут используется CSS-переменная --vh, которой нет в предоставленных стилях. */
+    height: max(600px, calc(var(--vh, 1vh) * 100));
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+/* Стили для h1 внутри .link (переопределяет общие h1-стили, но фактически дублирует их) */
+.link h1 {
+    color: white;
+    justify-self: center;
+    margin: 1vh;
+}
+
+/* Стили для логотипа */
+.logo {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    justify-self: center;
+}
+
+/* Контейнер для аватарки */
+.holder {
+    position: relative;
+    justify-self: center;
+    margin-bottom: 2vh;
+}
+
+/* Контейнер для изображения аватарки */
+.ava {
+    border-radius: 50%;
+    overflow: hidden;
+    width: min(30vw, 133px);
+    height: min(30vw, 133px);
+}
+
+/* Изображение внутри контейнера аватарки */
+.ava img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+/* Градиентная обводка для аватарки */
+.ava::before {
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(120deg, #57ebdb, #403ddb 41.07%, #070047 76.05%);
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+}
+
+/* Медиа-запрос для пользователей с prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .contact__link {
+        transition: none;
+    }
+}
