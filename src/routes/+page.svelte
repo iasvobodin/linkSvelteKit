@@ -97,12 +97,12 @@
 		target="_blank"
 		rel="noopener noreferrer">Портфолио и сайт</a
 	>
-	<a
+	<!-- <a
 		class="contact__link"
 		href="https://www.instagram.com/svobodinaphoto/"
 		target="_blank"
 		rel="noopener noreferrer">Instagram</a
-	>
+	> -->
 	<a
 		class="contact__link"
 		href="https://vk.com/svobodinaphoto"
@@ -127,11 +127,11 @@
 		target="_blank"
 		rel="noopener noreferrer">Написать в WhatsApp</a
 	>
-	<a
+	<!-- <a
 		class="contact__link"
 		href="viber://add?number=79514616243"
 		target="_blank"
 		rel="noopener noreferrer">Написать в Viber</a
-	>
+	> -->
 	<a class="contact__link" href="tel:+79514616243">Позвонить: +7 (951) 461-62-43</a>
 </main>
